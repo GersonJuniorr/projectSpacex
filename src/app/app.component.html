@@ -8,7 +8,7 @@
         <li>All Rockets</li>
       </ul>
     </nav>
-    <button class="btnMenu" (click)="showMenu()"><img src="https://cdn-icons-png.flaticon.com/512/55/55003.png" alt="" class="imgMenu"></button>
+    <button class="btnMenu" (click)="show()"><img src="https://cdn-icons-png.flaticon.com/512/55/55003.png" alt="" class="imgMenu"></button>
   </div>
 </header>
 
@@ -16,33 +16,21 @@
   <div class="allDiv">
     <div class="card">
       <div>
-        <h3>Falcon 9</h3>
+        <h3>{{ rockets[0].rocket_name }}</h3>
+        <img class="imgCard" src="{{ rockets[0].flickr_images[0] }}" alt="">
       </div>
     </div>
     <div class="card">
-      <h3>Falcon Heavy</h3>
+      <h3>{{ rockets[1].rocket_name }}</h3>
+      <img class="imgCard" src="{{ rockets[1].flickr_images[0] }}" alt="">
     </div>
     <div class="card">
-      <h3>Falcon</h3>
+      <h3>{{ rockets[2].rocket_name }}</h3>
+      <img class="imgCard" src="{{ rockets[2].flickr_images[0] }}" alt="">
     </div>
     <div class="card">
-      <h3>Falcon 3</h3>
-    </div>
-  </div>
-  <div class="allDiv">
-    <div class="card">
-      <div>
-        <h3>Falcon 9</h3>
-      </div>
-    </div>
-    <div class="card">
-      <h3>Falcon Heavy</h3>
-    </div>
-    <div class="card">
-      <h3>Falcon</h3>
-    </div>
-    <div class="card">
-      <h3>Falcon 3</h3>
+      <h3>{{ rockets[3].rocket_name }}</h3>
+      <img class="imgCard" src="{{ rockets[3].flickr_images[0] }}" alt="">
     </div>
   </div>
 </body>
